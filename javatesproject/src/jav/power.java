@@ -9,6 +9,7 @@ public class power {
                 result = result * value;
             }
             return result;
+
         }
 
 
