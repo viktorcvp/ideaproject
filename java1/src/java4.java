@@ -10,7 +10,7 @@ public class java4 {
             return countPaths (x + 1, y, N)+ countPaths(x, y + 1, N);
         }
         public static void main(String[] args){
-            int res =  countPaths(1, 1, 8);
+            int res =  countPaths(1, 1, 15);
             System.out.println(res);
         }
     }
