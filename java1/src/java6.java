@@ -11,12 +11,13 @@ public class java6 {
     
     public static int[][] Input_Maze() {
         System.out.println("Введите количестов рядов");
-        Scanner line = new Scanner(System.in);
-        int m = line.nextInt();
-        System.out.println("Введите количестов столбцов");
-        int n = line.nextInt();
-        int[][] maze = new int[m][n];
-        return maze;
+        try (Scanner line = new Scanner(System.in)) {
+            int m = line.nextInt();
+            System.out.println("Введите количестов столбцов");
+            int n = line.nextInt();
+            int[][] maze = new int[m][n];
+            return maze;
+        }
 
     }
 
